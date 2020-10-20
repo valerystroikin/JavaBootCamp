@@ -2,7 +2,7 @@ package sef.module2.sample;
 
 public class HelloWorld {
 	
-	public static void main(String arg[]){
+	public static void main(String temp){
 		System.out.println("Hello World!");
 	}
 	
