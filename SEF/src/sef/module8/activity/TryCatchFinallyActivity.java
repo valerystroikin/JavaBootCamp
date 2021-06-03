@@ -11,17 +11,24 @@ public static void main(String[] args) {
 
 void catchMeIfYouCan()
 {
-	int [] arr={0,1,2,3,4,5,6,7,8,9};
-	
-	for(int i=0;i<=10;i++)
-	{
-		System.out.println(arr[i]);
+	try {
+		int [] arr={0,1,2,3,4,5,6,7,8,9};
+		System.out.println("Printing array elements:");
+		for(int i=0;i<=15;i++)
+		{
+			System.out.print(arr[i]+" ");
+		}
 	}
-	
-	
-	
-	System.out.println("This should get printed even if there is an exception");
-	
+	catch(ArrayIndexOutOfBoundsException eArray){
+		System.out.println("");
+		System.out.println("Data error in <Catch block>: Array index fault");
+	}
+	catch(Exception e) {
+		System.out.println("<Catch block> says that something went wrong: other problems");
+	}
+	finally {
+		System.out.println("Executing <Finally Block> code. Check your data and try again. ");
+	}
 }
 
 }
